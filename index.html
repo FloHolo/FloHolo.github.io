@@ -1,21 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-            text-align: center;
-        }
-        h1 {
-            color: #3366cc;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Your Name | Portfolio</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #E0E0E0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .sidebar {
+      width: 35%;
+      text-align: center;
+      padding-right: 20px;
+      border-right: 1px solid #2c2c2c;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #66BB6A; /* Green border */
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #66BB6A;
+      margin: 20px 0 10px;
+    }
+
+    .links a {
+      color: #AED581;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .bio {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #CCCCCC;
+    }
+
+    .content {
+      width: 65%;
+      padding-left: 20px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #66BB6A;
+      padding-bottom: 5px;
+      color: #81C784;
+    }
+
+    .project {
+      margin-bottom: 30px;
+    }
+
+    .project-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #E0E0E0;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      margin: 5px 0 10px;
+      color: #B0BEC5;
+    }
+
+    .project a {
+      display: inline-block;
+      background-color: #2E7D32;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 13px;
+      transition: background-color 0.3s;
+    }
+
+    .project a:hover {
+      background-color: #388E3C;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, I'm Vilius Andriekus !</h1>
-    <p>Welcome to my GitHub Pages site.</p>
+  <div class="container">
+    <!-- Left Column -->
+    <div class="sidebar">
+      <img src="Profile.jpg" alt="Vilius Andriekus" class="profile-img" />
+
+      <div class="name">Vilius Andriekus</div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/vilius-andriekus-42a605132/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/FloHolo" target="_blank">GitHub</a>
+      </div>
+      <div class="bio">
+        <p>I am pursuing a degree in Computer Science at Teesside University.</p>
+        <p>Currently working on [your research/project/focus] with a passion for [e.g. AI, design, etc.].</p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="content">
+      <div class="section-title">Portfolio</div>
+
+      <div class="project">
+        <div class="project-title">Project Title</div>
+        <div class="project-desc">
+          Short description of the project and what it does. Include highlights and tech used.
+        </div>
+        <a href="#">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Another Project</div>
+        <div class="project-desc">
+          Description of another awesome thing you worked on or built.
+        </div>
+        <a href="#">View on GitHub</a>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
